@@ -29,7 +29,7 @@ public class App extends Application {
                 String safenumber = sp.getString("safephone", "");
                 if (!TextUtils.isEmpty(safenumber)) {
                     SmsManager smsManager = SmsManager.getDefault();
-                    smsManager.sendTextMessage(safenumber, null, "你的亲友手机的S工M卡己经被更换!", null, null);
+                    smsManager.sendTextMessage(safenumber, null, "你的亲友手机的SIM卡己经被更换!", null, null);
                 }
             }
         }
