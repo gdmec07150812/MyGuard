@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom_android="http://schemas.android.com/apk/res/com.gdmec.jacky.myguard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <com.gdmec.jacky.myguard.m9advancedtools.widget.AdvancedToolsView
+        android:id="@+id/advanceview_numbelongs"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/numofbelongto"
+        custom_android:desc="号码归属地查询">
+
+    </com.gdmec.jacky.myguard.m9advancedtools.widget.AdvancedToolsView>
+
+    <com.gdmec.jacky.myguard.m9advancedtools.widget.AdvancedToolsView
+        android:id="@+id/advanceview_smsbackup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/sms_backup"
+        custom_android:desc="短信备份">
+
+    </com.gdmec.jacky.myguard.m9advancedtools.widget.AdvancedToolsView>
+
+    <com.gdmec.jacky.myguard.m9advancedtools.widget.AdvancedToolsView
+        android:id="@+id/advanceview_smsreducition"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/sms_reduction"
+        custom_android:desc="短信还原">
+
+    </com.gdmec.jacky.myguard.m9advancedtools.widget.AdvancedToolsView>
+
+    <com.gdmec.jacky.myguard.m9advancedtools.widget.AdvancedToolsView
+        android:id="@+id/advanceview_applock"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/programoflock"
+        custom_android:desc="程序锁">
+
+    </com.gdmec.jacky.myguard.m9advancedtools.widget.AdvancedToolsView>
+</LinearLayout>

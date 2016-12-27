@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gdmec.jacky.myguard">
+
+    <!--m1 -->
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!--m2 -->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!--m3 -->
+
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!-- m5-->
+
+
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+
+    <!-- m9-->
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".m1home.HomeActivity" />
+
+
+        <activity android:name=".SplashActivity">
+
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".m2theftguard.ContactSelectActivity" />
+
+        <activity android:name=".m2theftguard.LostFindActivity" />
+
+        <activity android:name=".m2theftguard.SetUp1Activity" />
+
+        <activity android:name=".m2theftguard.SetUp2Activity" />
+
+        <activity android:name=".m2theftguard.SetUp3Activity" />
+
+        <activity android:name=".m2theftguard.SetUp4Activity" />
+
+        <service
+            android:name=".m2theftguard.service.GPSLocationService"
+            android:enabled="true"
+            android:exported="true" />
+
+
+        <receiver
+            android:name=".m2theftguard.receiver.BootCompleteReciever"
+            android:enabled="true"
+            android:exported="true">
+
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+            </intent-filter>
+
+        </receiver>
+
+
+        <receiver
+            android:name=".m2theftguard.receiver.MyDeviceAdminReciever"
+            android:description="@string/sample_device_admin_description"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/sample_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample" />
+
+
+            <intent-filter>
+
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+
+            </intent-filter>
+
+        </receiver>
+
+
+        <receiver
+            android:name=".m2theftguard.receiver.SmsLostFindReciver"
+            android:enabled="true"
+            android:exported="true">
+
+
+            <intent-filter android:priority="2147483647">
+
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+
+            </intent-filter>
+
+        </receiver>
+
+        <activity android:name=".m3communicationguard.AddBlackNumberActivity" />
+
+        <activity android:name=".m3communicationguard.ContactSelectActivity" />
+
+        <activity android:name=".m3communicationguard.SecurityPhoneActivity" />
+
+
+        <receiver
+            android:name=".m3communicationguard.receiver.InterceptSmsReciever"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+
+
+            <intent-filter android:priority="2147483647">
+
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+
+            </intent-filter>
+
+        </receiver>
+
+
+        <receiver
+            android:name=".m3communicationguard.receiver.InterceptCallReciever"
+            android:enabled="true"
+            android:exported="true">
+
+
+            <intent-filter android:priority="2147483647">
+
+                <action android:name="android.intent.action.PHONE_STATE" />
+
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+
+            </intent-filter>
+
+        </receiver>
+
+        <activity android:name=".m4appmanager.AppManagerActivity" />
+
+        <activity android:name=".m5virusscan.VirusScanActivity" />
+
+        <activity android:name=".m5virusscan.VirusScanSpeedActivity" />
+
+        <activity android:name=".m6cleancache.CleanCacheActivity" />
+
+        <activity android:name=".m6cleancache.CacheClearListActivity" />
+
+        <activity android:name=".m7processmanager.ProcessManagerActivity" />
+
+        <activity android:name=".m7processmanager.ProcessManagerSettingActivity" />
+
+        <service
+            android:name=".m7processmanager.service.AutoKillProcessService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".m8trafficmonitor.OperatorSetActivity" />
+
+        <activity android:name=".m8trafficmonitor.TrafficMonitoringActivity" />
+
+        <service
+            android:name=".m8trafficmonitor.service.TrafficMonitoringService"
+            android:enabled="true"
+            android:exported="true"
+            android:persistent="true" />
+
+
+        <receiver
+            android:name=".m8trafficmonitor.receiver.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+            </intent-filter>
+
+        </receiver>
+
+        <activity android:name=".m9advancedtools.AdvancedToolsActivity" />
+
+        <activity android:name=".m9advancedtools.AppLockActivity" />
+
+        <activity android:name=".m9advancedtools.EnterPswActivity" />
+
+        <activity android:name=".m9advancedtools.NumBelongtoActivity" />
+
+        <activity android:name=".m9advancedtools.SMSBackupActivity" />
+
+        <activity android:name=".m9advancedtools.SMSReducitionActivity" />
+
+        <service
+            android:name=".m9advancedtools.service.AppLockService"
+            android:enabled="true"
+            android:exported="true"
+            android:persistent="true" />
+
+        <activity android:name=".m10settings.SettingsActivity" />
+
+    </application>
+
+</manifest>
