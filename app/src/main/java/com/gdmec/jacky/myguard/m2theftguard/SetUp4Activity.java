@@ -2,6 +2,7 @@ package com.gdmec.jacky.myguard.m2theftguard;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Window;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -17,11 +18,15 @@ public class SetUp4Activity extends BaseSetUpActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_set_up4);
         initView();
     }
 
     private void initView() {
+        TextView mTitleTV = (TextView) findViewById(R.id.tv_title);
+        mTitleTV.setText("手机防盗");
+        findViewById(R.id.rl_titlebar).setBackgroundColor(getResources().getColor(R.color.green360));
         ((RadioButton) findViewById(R.id.rb_four)).setChecked(true);
         mStatusTV = (TextView) findViewById(R.id.tv_setup4_status);
         mToggleButton = (ToggleButton) findViewById(R.id.togglebtn_securityfunction);

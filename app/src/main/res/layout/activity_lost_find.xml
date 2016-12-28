@@ -17,7 +17,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:text="安全号码"
-            android:textColor="@color/purple" />
+            android:textColor="@color/gary360" />
 
         <TextView
             android:id="@+id/tv_safephone"
@@ -25,7 +25,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="15dp"
-            android:textColor="@color/purple" />
+            android:textColor="@color/gary360" />
     </RelativeLayout>
 
     <View
@@ -44,7 +44,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:text="防盗保护是否开启"
-            android:textColor="@color/purple" />
+            android:textColor="@color/gary360" />
 
         <ToggleButton
             android:id="@+id/togglebtn_lostfind"
@@ -74,7 +74,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:text="重新进入设置向导"
-            android:textColor="@color/purple" />
+            android:textColor="@color/gary360" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -117,7 +117,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="10dp"
                 android:text="#*alarm*#"
-                android:textColor="@color/purple" />
+                android:textColor="@color/gary360" />
 
             <TextView
                 style="@style/textview16sp"
@@ -127,7 +127,7 @@
                 android:drawableLeft="@drawable/sim_alarm_icon_small"
                 android:drawablePadding="5dp"
                 android:text="播放报警音乐"
-                android:textColor="@color/purple" />
+                android:textColor="@color/gary360" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -140,7 +140,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="10dp"
                 android:text="#*location*#"
-                android:textColor="@color/purple" />
+                android:textColor="@color/gary360" />
 
             <TextView
                 style="@style/textview16sp"
@@ -150,7 +150,7 @@
                 android:drawableLeft="@drawable/location_icon_small"
                 android:drawablePadding="5dp"
                 android:text="GPS追踪"
-                android:textColor="@color/purple" />
+                android:textColor="@color/gary360" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -163,7 +163,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="10dp"
                 android:text="#*lockScreen*#"
-                android:textColor="@color/purple" />
+                android:textColor="@color/gary360" />
 
             <TextView
                 style="@style/textview16sp"
@@ -173,7 +173,7 @@
                 android:drawableLeft="@drawable/lock_screen_icon_small"
                 android:drawablePadding="5dp"
                 android:text="远程锁屏"
-                android:textColor="@color/purple" />
+                android:textColor="@color/gary360" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -186,7 +186,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="10dp"
                 android:text="#*wipedata*#"
-                android:textColor="@color/purple" />
+                android:textColor="@color/gary360" />
 
             <TextView
                 style="@style/textview16sp"
@@ -196,7 +196,7 @@
                 android:drawableLeft="@drawable/delete_data_small"
                 android:drawablePadding="5dp"
                 android:text="远程删除数据"
-                android:textColor="@color/purple" />
+                android:textColor="@color/gary360" />
         </RelativeLayout>
     </LinearLayout>
 

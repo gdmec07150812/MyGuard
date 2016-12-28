@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <include layout="@layout/titlebar" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,22 +15,22 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="160dp"
-            android:background="@color/purple">
-
+            android:background="@color/green360">
             <ImageView
                 android:id="@+id/imgv"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_centerInParent="true"
-                android:background="@drawable/add" />
-
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/safe" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imgv"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="SIM卡绑定"
+                android:text="手机防盗向导"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
         </RelativeLayout>
@@ -55,7 +56,7 @@
                 android:layout_marginRight="15dp"
                 android:lineSpacingMultiplier="1.5"
                 android:text="@string/_sim_sim_bind_info"
-                android:textColor="@color/purple"
+                android:textColor="@color/gary360"
                 android:textScaleX="1.1" />
         </LinearLayout>
 
@@ -68,7 +69,7 @@
 
             <Button
                 android:id="@+id/btn_bind_sim"
-                android:layout_width="180dp"
+                android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="20dp"
@@ -81,7 +82,7 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_weight="10"
-        android:background="@color/purple"
+        android:background="@color/green360"
         android:gravity="center">
 
         <include layout="@layout/setup_radiogroup" />

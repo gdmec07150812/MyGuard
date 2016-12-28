@@ -1,9 +1,9 @@
 package com.gdmec.jacky.myguard.m2theftguard;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.Window;
@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.gdmec.jacky.myguard.R;
 
-public abstract class BaseSetUpActivity extends AppCompatActivity {
+public abstract class BaseSetUpActivity extends Activity {
 
     public SharedPreferences sp;
     private GestureDetector mGestureDetector;

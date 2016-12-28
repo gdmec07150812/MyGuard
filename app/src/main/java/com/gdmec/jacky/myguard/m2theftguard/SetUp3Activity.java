@@ -5,8 +5,10 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.gdmec.jacky.myguard.R;
@@ -18,11 +20,15 @@ public class SetUp3Activity extends BaseSetUpActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_set_up3);
         initView();
     }
 
     private void initView() {
+        TextView mTitleTV = (TextView) findViewById(R.id.tv_title);
+        mTitleTV.setText("手机防盗");
+        findViewById(R.id.rl_titlebar).setBackgroundColor(getResources().getColor(R.color.green360));
         ((RadioButton) findViewById(R.id.rb_third)).setChecked(true);
         findViewById(R.id.btn_addcontact).setOnClickListener(this);
         mInputPhone = (EditText) findViewById(R.id.et_inputphone);

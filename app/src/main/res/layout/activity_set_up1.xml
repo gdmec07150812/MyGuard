@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <include layout="@layout/titlebar" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,20 +16,20 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="160dp"
-            android:background="@color/purple">
-
+            android:background="@color/green360">
             <ImageView
                 android:id="@+id/imgv"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_centerInParent="true"
-                android:background="@drawable/add" />
-
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/safe" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/imgv"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:gravity="center"
                 android:text="手机防盗向导"
                 android:textColor="@android:color/white"
@@ -56,7 +58,7 @@
                     android:drawableTop="@drawable/sim_alarm_icon"
                     android:gravity="center"
                     android:text="SIM卡变更报警"
-                    android:textColor="@color/purple" />
+                    android:textColor="@color/gary360" />
 
                 <TextView
                     style="@style/textview16sp"
@@ -66,7 +68,7 @@
                     android:drawableTop="@drawable/location_icon"
                     android:gravity="center"
                     android:text="GPS追踪"
-                    android:textColor="@color/purple" />
+                    android:textColor="@color/gary360" />
             </LinearLayout>
 
             <LinearLayout
@@ -85,7 +87,7 @@
                     android:drawableTop="@drawable/lock_screen_icon"
                     android:gravity="center"
                     android:text="远程锁屏"
-                    android:textColor="@color/purple" />
+                    android:textColor="@color/gary360" />
 
                 <TextView
                     style="@style/textview16sp"
@@ -95,7 +97,7 @@
                     android:drawableTop="@drawable/delete_data"
                     android:gravity="center"
                     android:text="远程删除数据"
-                    android:textColor="@color/purple" />
+                    android:textColor="@color/gary360" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -104,7 +106,7 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_weight="10"
-        android:background="@color/purple"
+        android:background="@color/green360"
         android:gravity="center">
 
         <include layout="@layout/setup_radiogroup" />

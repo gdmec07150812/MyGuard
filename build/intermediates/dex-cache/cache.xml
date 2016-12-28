@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="12b80c723c3fcb5cacbd8bdde14196b3475ec13f">
+        sha1="5c98a7f05559d9b86cf403976bd2ca809414b7cf">
         <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_45b4dcc892f02107686ebfa8cec7e63cd00bf705\classes.dex" />
     </item>
     <item
@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="b6938d65265d0edd4f33afa833ff6080b845afc3">
+        sha1="bc1a54ea607717d7de391173b1beac5fb1072076">
         <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_af2796b4cf7b55f26d1a7d76f9ad0dc49c10bea2\classes.dex" />
     </item>
     <item

@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:gravity="center">
 
-        <com.gdmec.jacky.myguard.m9advancedtools.widget.MyCricleProgress
+        <com.gdmec.jacky.myguard.m9advancedtools.widget.MyCircleProgress
             android:id="@+id/mcp_reducition"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

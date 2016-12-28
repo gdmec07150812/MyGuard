@@ -45,7 +45,7 @@ public class LostFindActivity extends Activity implements View.OnClickListener {
         ImageView mLeftImgv = (ImageView) findViewById(R.id.imgv_leftbtn);
         mLeftImgv.setOnClickListener(this);
         mLeftImgv.setImageResource(R.drawable.back);
-        findViewById(R.id.rl_titlebar).setBackgroundColor(getResources().getColor(R.color.purple));
+        findViewById(R.id.rl_titlebar).setBackgroundColor(getResources().getColor(R.color.green360));
         mSafePhoneTV = (TextView) findViewById(R.id.tv_safephone);
         mSafePhoneTV.setText(msharePreferences.getString("safephone", ""));
         mToggleButton = (ToggleButton) findViewById(R.id.togglebtn_lostfind);

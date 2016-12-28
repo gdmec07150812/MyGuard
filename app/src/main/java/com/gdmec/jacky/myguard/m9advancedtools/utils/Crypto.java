@@ -45,7 +45,7 @@ public class Crypto {
     private static byte[] decrypt(byte[] raw, byte[] encrypted) throws Exception {
         SecretKeySpec keySpec = new SecretKeySpec(raw, "AES");
         Cipher cipher = Cipher.getInstance("AES");
-        cipher.init(Cipher.DECRYPT_MODE, keySpec);
+        cipher.init(Cipher.ENCRYPT_MODE, keySpec);
         byte[] decrypted = cipher.doFinal(encrypted);
         return decrypted;
     }

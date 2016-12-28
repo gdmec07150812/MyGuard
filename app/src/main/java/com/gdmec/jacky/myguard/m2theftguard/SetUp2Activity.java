@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.gdmec.jacky.myguard.R;
@@ -18,12 +20,16 @@ public class SetUp2Activity extends BaseSetUpActivity implements View.OnClickLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_set_up2);
         mTelephonyManager = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
         initView();
     }
 
     private void initView() {
+        TextView mTitleTV = (TextView) findViewById(R.id.tv_title);
+        mTitleTV.setText("手机防盗");
+        findViewById(R.id.rl_titlebar).setBackgroundColor(getResources().getColor(R.color.green360));
         ((RadioButton) findViewById(R.id.rb_second)).setChecked(true);
         mBindSIMBtn = (Button) findViewById(R.id.btn_bind_sim);
         mBindSIMBtn.setOnClickListener(this);
@@ -69,10 +75,8 @@ public class SetUp2Activity extends BaseSetUpActivity implements View.OnClickLis
             edit.putString("sim", simSerialNumber);
             edit.commit();
             Toast.makeText(this, "SIM卡绑定成功！", Toast.LENGTH_SHORT).show();
-            mBindSIMBtn.setEnabled(false);
         } else {
-            Toast.makeText(this, "SIM卡已经绑定！", Toast.LENGTH_SHORT).show();
-            mBindSIMBtn.setEnabled(false);
+            Toast.makeText(this, "SIM卡已经绑定过了！", Toast.LENGTH_SHORT).show();
         }
     }
 }

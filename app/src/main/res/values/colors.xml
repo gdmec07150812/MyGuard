@@ -24,5 +24,7 @@
     <color name="bright_green">#26E587</color>
     <color name="light_green">#55DC28</color>
     <color name="graye5">#E5E5E5</color>
+    <color name="green360">#009900</color>
+    <color name="gary360">#45484d</color>
 
 </resources>
