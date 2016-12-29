@@ -1,5 +1,6 @@
 package com.gdmec.jacky.myguard.m4appmanager;
 
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -7,7 +8,6 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.text.format.Formatter;
 import android.view.View;
 import android.view.Window;
@@ -25,7 +25,7 @@ import com.gdmec.jacky.myguard.m4appmanager.utils.AppInfoParser;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AppManagerActivity extends AppCompatActivity implements View.OnClickListener {
+public class AppManagerActivity extends Activity implements View.OnClickListener {
 
     private TextView mPhoneMemoryTV, mSDMemoryTV, mAppNumTV;
     private ListView mListView;

@@ -14,6 +14,9 @@ import android.widget.Button;
 import com.gdmec.jacky.myguard.R;
 import com.gdmec.jacky.myguard.m9advancedtools.utils.DensityUtil;
 
+/**
+ * Created by dell-pc on 2016/12/19.
+ */
 public class MyCircleProgress extends Button {
 
     private Paint paint;

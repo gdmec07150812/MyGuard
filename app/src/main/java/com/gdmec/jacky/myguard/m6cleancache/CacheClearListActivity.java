@@ -1,5 +1,6 @@
 package com.gdmec.jacky.myguard.m6cleancache;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.IPackageStatsObserver;
 import android.content.pm.PackageInfo;
@@ -10,7 +11,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.RemoteException;
-import android.support.v7.app.AppCompatActivity;
 import android.text.format.Formatter;
 import android.view.View;
 import android.view.Window;
@@ -28,7 +28,7 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CacheClearListActivity extends AppCompatActivity implements View.OnClickListener {
+public class CacheClearListActivity extends Activity implements View.OnClickListener {
     protected static final int SCANNING = 100;
     protected static final int FINISH = 101;
     private AnimationDrawable animation;

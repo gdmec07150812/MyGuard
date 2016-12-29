@@ -2,6 +2,9 @@ package com.gdmec.jacky.myguard.m9advancedtools.entity;
 
 import android.graphics.drawable.Drawable;
 
+/**
+ * Created by dell-pc on 2016/12/19.
+ */
 public class AppInfo {
 
     //应用程序包名

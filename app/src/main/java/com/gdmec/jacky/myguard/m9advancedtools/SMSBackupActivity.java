@@ -1,8 +1,8 @@
 package com.gdmec.jacky.myguard.m9advancedtools;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
@@ -16,7 +16,7 @@ import com.gdmec.jacky.myguard.m9advancedtools.widget.MyCircleProgress;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class SMSBackupActivity extends AppCompatActivity implements View.OnClickListener {
+public class SMSBackupActivity extends Activity implements View.OnClickListener {
     private static final int CHANCE_BUTTON_TEXT = 100;
     private MyCircleProgress mProgressButton;
     private boolean flag = false;

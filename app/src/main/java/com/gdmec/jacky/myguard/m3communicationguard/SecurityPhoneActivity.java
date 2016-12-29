@@ -1,8 +1,8 @@
 package com.gdmec.jacky.myguard.m3communicationguard;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.widget.AbsListView;
@@ -20,7 +20,7 @@ import com.gdmec.jacky.myguard.m3communicationguard.entity.BlackContactInfo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SecurityPhoneActivity extends AppCompatActivity implements View.OnClickListener {
+public class SecurityPhoneActivity extends Activity implements View.OnClickListener {
 
     public BlackContactAdapter adapter;
     private FrameLayout mHaveBlackNumber;

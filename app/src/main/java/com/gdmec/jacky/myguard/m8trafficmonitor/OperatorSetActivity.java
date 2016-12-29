@@ -1,9 +1,9 @@
 package com.gdmec.jacky.myguard.m8trafficmonitor;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.widget.ArrayAdapter;
@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.gdmec.jacky.myguard.R;
 
-public class OperatorSetActivity extends AppCompatActivity implements View.OnClickListener {
+public class OperatorSetActivity extends Activity implements View.OnClickListener {
     private Spinner mSelectSP;
     private String[] operators = {"中国移动", "中国联通", "中国电信"};
     private ArrayAdapter mSelectadapter;

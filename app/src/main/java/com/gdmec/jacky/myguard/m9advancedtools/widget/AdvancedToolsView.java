@@ -11,6 +11,10 @@ import android.widget.TextView;
 
 import com.gdmec.jacky.myguard.R;
 
+
+/**
+ * Created by dell-pc on 2016/12/19.
+ */
 public class AdvancedToolsView extends RelativeLayout {
     private TextView mDescriptionTV;
     private String desc = "";

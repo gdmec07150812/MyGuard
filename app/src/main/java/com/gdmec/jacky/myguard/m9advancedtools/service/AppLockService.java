@@ -16,6 +16,9 @@ import com.gdmec.jacky.myguard.m9advancedtools.db.dao.AppLockDao;
 
 import java.util.List;
 
+/**
+ * Created by dell-pc on 2016/12/19.
+ */
 public class AppLockService extends Service {
     private boolean flag = false;
     private AppLockDao dao;

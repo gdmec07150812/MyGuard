@@ -1,9 +1,9 @@
 package com.gdmec.jacky.myguard.m7processmanager;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.widget.CompoundButton;
@@ -15,7 +15,7 @@ import com.gdmec.jacky.myguard.R;
 import com.gdmec.jacky.myguard.m7processmanager.service.AutoKillProcessService;
 import com.gdmec.jacky.myguard.m7processmanager.utils.SystemInfoUtils;
 
-public class ProcessManagerSettingActivity extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
+public class ProcessManagerSettingActivity extends Activity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
     private ToggleButton mShowSysAppsTgb;
     private ToggleButton mKillProcessTgb;
     private SharedPreferences mSP;

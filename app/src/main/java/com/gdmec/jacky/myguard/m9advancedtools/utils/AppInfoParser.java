@@ -10,6 +10,9 @@ import com.gdmec.jacky.myguard.m9advancedtools.entity.AppInfo;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Created by dell-pc on 2016/12/19.
+ */
 public class AppInfoParser {
 
     public static List<AppInfo> getAppInfos(Context context) {

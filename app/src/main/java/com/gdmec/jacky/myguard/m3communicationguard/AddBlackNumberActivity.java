@@ -1,8 +1,8 @@
 package com.gdmec.jacky.myguard.m3communicationguard;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
@@ -16,7 +16,7 @@ import com.gdmec.jacky.myguard.R;
 import com.gdmec.jacky.myguard.m3communicationguard.db.dao.BlackNumberDao;
 import com.gdmec.jacky.myguard.m3communicationguard.entity.BlackContactInfo;
 
-public class AddBlackNumberActivity extends AppCompatActivity implements View.OnClickListener {
+public class AddBlackNumberActivity extends Activity implements View.OnClickListener {
 
     private CheckBox mSmsCB;
     private CheckBox mTelCB;

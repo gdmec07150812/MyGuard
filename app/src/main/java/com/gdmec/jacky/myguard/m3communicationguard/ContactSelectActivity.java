@@ -1,10 +1,10 @@
 package com.gdmec.jacky.myguard.m3communicationguard;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
@@ -20,7 +20,7 @@ import com.gdmec.jacky.myguard.m3communicationguard.utils.ContactInfoParser;
 import java.util.List;
 
 
-public class ContactSelectActivity extends AppCompatActivity implements View.OnClickListener {
+public class ContactSelectActivity extends Activity implements View.OnClickListener {
 
     private ListView mListView;
     private ContactAdapter adapter;

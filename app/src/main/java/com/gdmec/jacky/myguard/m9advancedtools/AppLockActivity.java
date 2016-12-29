@@ -1,5 +1,6 @@
 package com.gdmec.jacky.myguard.m9advancedtools;
 
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -18,7 +19,9 @@ import com.gdmec.jacky.myguard.m9advancedtools.fragment.AppUnlockFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Created by dell-pc on 2016/12/19.
+ */
 //程序锁
 public class AppLockActivity extends FragmentActivity implements View.OnClickListener {
     List<Fragment> mFragments = new ArrayList<Fragment>();
@@ -55,12 +58,10 @@ public class AppLockActivity extends FragmentActivity implements View.OnClickLis
                     mUnLockTV.setTextColor(getResources().getColor(R.color.black));
                 }
             }
-
             @Override
             public void onPageScrolled(int arg0, float arg1, int arg2) {
 
             }
-
             @Override
             public void onPageScrollStateChanged(int arg0) {
 

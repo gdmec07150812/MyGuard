@@ -2,6 +2,9 @@ package com.gdmec.jacky.myguard.m9advancedtools.utils;
 
 import android.content.Context;
 
+/**
+ * Created by dell-pc on 2016/12/19.
+ */
 public class DensityUtil {
     public static int dip2px(Context context, float dpValue) {
         try {

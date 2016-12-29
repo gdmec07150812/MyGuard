@@ -43,10 +43,31 @@
         android:id="@+id/advanceview_applock"
         android:layout_width="match_parent"
         android:layout_height="55dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginTop="3dp"
         android:gravity="center_vertical"
         android:src="@drawable/programoflock"
         custom_android:desc="程序锁">
+
+    </com.gdmec.jacky.myguard.m9advancedtools.widget.AdvancedToolsView>
+
+    <com.gdmec.jacky.myguard.m9advancedtools.widget.AdvancedToolsView
+        android:id="@+id/advanceview_sensortest"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/numofbelongto"
+        custom_android:desc="传感器测试">
+
+    </com.gdmec.jacky.myguard.m9advancedtools.widget.AdvancedToolsView>
+
+    <com.gdmec.jacky.myguard.m9advancedtools.widget.AdvancedToolsView
+        android:id="@+id/advanceview_mycalculator"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/numofbelongto"
+        custom_android:desc="身高体重计算器">
 
     </com.gdmec.jacky.myguard.m9advancedtools.widget.AdvancedToolsView>
 </LinearLayout>

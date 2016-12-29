@@ -13,6 +13,11 @@ import com.gdmec.jacky.myguard.m9advancedtools.entity.AppInfo;
 
 import java.util.List;
 
+/**
+ * Created by dell-pc on 2016/12/19.
+ * <p>
+ * page38.39
+ */
 public class AppLockAdapter extends BaseAdapter {
     private List<AppInfo> appInfos;
     private Context context;

@@ -3,6 +3,9 @@ package com.gdmec.jacky.myguard.m9advancedtools.utils;
 import android.app.Activity;
 import android.widget.Toast;
 
+/**
+ * Created by dell-pc on 2016/12/19.
+ */
 public class UiUtils {
 
     public static void showToast(final Activity context, final String msg) {

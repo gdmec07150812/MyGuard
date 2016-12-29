@@ -1,17 +1,18 @@
 package com.gdmec.jacky.myguard.m1home;
 
+import android.app.Activity;
 import android.app.admin.DevicePolicyManager;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.gdmec.jacky.myguard.R;
@@ -29,8 +30,10 @@ import com.gdmec.jacky.myguard.m6cleancache.CacheClearListActivity;
 import com.gdmec.jacky.myguard.m7processmanager.ProcessManagerActivity;
 import com.gdmec.jacky.myguard.m8trafficmonitor.TrafficMonitoringActivity;
 import com.gdmec.jacky.myguard.m9advancedtools.AdvancedToolsActivity;
+import com.gdmec.jacky.myguard.myweather.Weather;
+import com.gdmec.jacky.mymap.MyMap;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends Activity {
 
     private GridView gv_home;
 
@@ -45,12 +48,13 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_home);
 
         msharedPreferences = getSharedPreferences("config", MODE_PRIVATE);
-
+        TextView mTitleTV = (TextView) findViewById(R.id.tv_title);
+        mTitleTV.setText("GDMEC手机卫士");
+        findViewById(R.id.rl_titlebar).setBackgroundColor(getResources().getColor(R.color.green360));
         gv_home = (GridView) findViewById(R.id.gv_home);
         gv_home.setAdapter(new HomeAdapter(HomeActivity.this));
         gv_home.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -88,6 +92,11 @@ public class HomeActivity extends AppCompatActivity {
                     case 8:
                         startActivity(SettingsActivity.class);
                         break;
+                    case 9:
+                        startActivity(Weather.class);
+                        break;
+                    case 10:
+                        startActivity(MyMap.class);
                 }
             }
         });

@@ -1,12 +1,12 @@
 package com.gdmec.jacky.myguard.m5virusscan;
 
+import android.app.Activity;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.animation.Animation;
@@ -28,7 +28,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-public class VirusScanSpeedActivity extends AppCompatActivity implements View.OnClickListener {
+public class VirusScanSpeedActivity extends Activity implements View.OnClickListener {
     protected static final int SCAN_BENGIN = 100;
     protected static final int SCANNING = 101;
     protected static final int SCAN_FINISH = 102;

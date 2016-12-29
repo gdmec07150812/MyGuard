@@ -21,6 +21,33 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4486c5a301f0e5e9f0b332f34ee75bc837519095">
+        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_af2796b4cf7b55f26d1a7d76f9ad0dc49c10bea2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.1_a399b818e46c555a8af65b47d9e6df91d143bf04\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_f4d3ebe0ca2361b94d275f37c80923fe75b3b9dd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
@@ -39,12 +66,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Android\AndroidStudioProjects\MyGuard\app\libs\xUtils-2.5.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7b27a19b6f7ed3d26d9157147545c94ea8ee535">
+        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\2\xUtils-2.5.5_32ebc7c3421c6a0a2123897e35cf547eb7e8a03a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_053d431190d44f31891d4ae327a19e243234cc8e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Android\AndroidStudioProjects\MyGuard\app\libs\httpcore-4.4.4.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="b31526a230871fbe285fbcbe2813f9c0839ae9b0">
         <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\2\httpcore-4.4.4_b3a55004353d589493824f819d3c66719ad5f4d2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.1_5dc2ceb5359ce82889c9d04a329076b2eb039bc8\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -57,11 +111,29 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Android\AndroidStudioProjects\MyGuard\app\libs\RootTools.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5f20254cf0ef9dd3e07c200540ec606668a713fa">
+        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\2\RootTools_7e9c181656b947616f4d55cdf25afeedbaf4dd9c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.1_f33d25d9dd4fab7b141e4a2e575c3ab94842d751\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="5c98a7f05559d9b86cf403976bd2ca809414b7cf">
+        sha1="057644416a88a604dbbbf7e62a05ced359f04f71">
         <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_45b4dcc892f02107686ebfa8cec7e63cd00bf705\classes.dex" />
     </item>
     <item
@@ -93,87 +165,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_ba92f60e785d38eced94a6856c0c29bc619f3a7f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="bc1a54ea607717d7de391173b1beac5fb1072076">
-        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_af2796b4cf7b55f26d1a7d76f9ad0dc49c10bea2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.1_a399b818e46c555a8af65b47d9e6df91d143bf04\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_f4d3ebe0ca2361b94d275f37c80923fe75b3b9dd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\AndroidStudioProjects\MyGuard\app\libs\xUtils-2.5.5.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d7b27a19b6f7ed3d26d9157147545c94ea8ee535">
-        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\2\xUtils-2.5.5_32ebc7c3421c6a0a2123897e35cf547eb7e8a03a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_053d431190d44f31891d4ae327a19e243234cc8e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.1_5dc2ceb5359ce82889c9d04a329076b2eb039bc8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\AndroidStudioProjects\MyGuard\app\libs\RootTools.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="5f20254cf0ef9dd3e07c200540ec606668a713fa">
-        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\2\RootTools_7e9c181656b947616f4d55cdf25afeedbaf4dd9c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.1_f33d25d9dd4fab7b141e4a2e575c3ab94842d751\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -192,12 +183,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Android\AndroidStudioProjects\MyGuard\app\libs\BaiduLBS_Android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4b9c73281b93a07dd4158b5364430f9ba3a864c9">
+        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\2\BaiduLBS_Android_87d81a676551f69dd1a3bff59432d019efd206a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
         <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_b2f66a7ee460611ce41e074e49f2f2586be3d5e2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="D:\Android\AndroidStudioProjects\MyGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_ba92f60e785d38eced94a6856c0c29bc619f3a7f\classes.dex" />
     </item>
 
 </items>

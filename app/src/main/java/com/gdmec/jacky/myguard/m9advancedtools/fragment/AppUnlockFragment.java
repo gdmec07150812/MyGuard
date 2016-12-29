@@ -25,6 +25,10 @@ import com.gdmec.jacky.myguard.m9advancedtools.utils.AppInfoParser;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * Created by dell-pc on 2016/12/19.
+ */
 public class AppUnlockFragment extends Fragment {
     List<AppInfo> unlockApps = new ArrayList<AppInfo>();
     private TextView mUnLockTV;

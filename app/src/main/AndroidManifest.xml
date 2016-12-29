@@ -13,7 +13,7 @@
 
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
-    <!--m2 -->
+    <!-- m2 -->
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
@@ -27,8 +27,7 @@
 
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
-    <!--m3 -->
-
+    <!-- m3 -->
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
@@ -38,15 +37,13 @@
 
     <uses-permission android:name="android.permission.READ_SMS" />
 
-    <!-- m5-->
-
+    <!-- m5 -->
 
     <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
 
     <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
 
-    <!-- m9-->
-
+    <!-- m9 -->
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -54,6 +51,27 @@
 
     <uses-permission android:name="android.permission.WRITE_SMS" />
 
+    <!-- weather -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- map -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <application
         android:name=".App"
@@ -252,6 +270,18 @@
             android:persistent="true" />
 
         <activity android:name=".m10settings.SettingsActivity" />
+
+        <activity android:name=".myweather.Weather" />
+
+        <activity android:name=".sensortest.SensorTest" />
+
+        <activity android:name=".mycalculator.MyCalculator" />
+
+        <activity android:name="com.gdmec.jacky.mymap.MyMap" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="v4Q9CoKs43pSEoEgNADzf3uTDw8XG29Q" />
 
     </application>
 

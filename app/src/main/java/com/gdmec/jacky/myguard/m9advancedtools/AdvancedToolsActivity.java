@@ -1,17 +1,18 @@
 package com.gdmec.jacky.myguard.m9advancedtools;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.gdmec.jacky.myguard.R;
+import com.gdmec.jacky.myguard.mycalculator.MyCalculator;
+import com.gdmec.jacky.myguard.sensortest.SensorTest;
 
-
-public class AdvancedToolsActivity extends AppCompatActivity implements View.OnClickListener {
+public class AdvancedToolsActivity extends Activity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +28,12 @@ public class AdvancedToolsActivity extends AppCompatActivity implements View.OnC
         ((TextView) findViewById(R.id.tv_title)).setText("高级工具");
         mLeftImgv.setOnClickListener(this);
         mLeftImgv.setImageResource(R.drawable.back);
-
         findViewById(R.id.advanceview_applock).setOnClickListener(this);
         findViewById(R.id.advanceview_numbelongs).setOnClickListener(this);
         findViewById(R.id.advanceview_smsbackup).setOnClickListener(this);
         findViewById(R.id.advanceview_smsreducition).setOnClickListener(this);
+        findViewById(R.id.advanceview_sensortest).setOnClickListener(this);
+        findViewById(R.id.advanceview_mycalculator).setOnClickListener(this);
     }
 
     @Override
@@ -49,8 +51,14 @@ public class AdvancedToolsActivity extends AppCompatActivity implements View.OnC
             case R.id.advanceview_smsreducition:
                 startActivity(SMSReducitionActivity.class);
                 break;
+            case R.id.advanceview_sensortest:
+                startActivity(SensorTest.class);
+                break;
             case R.id.advanceview_numbelongs:
                 startActivity(NumBelongtoActivity.class);
+                break;
+            case R.id.advanceview_mycalculator:
+                startActivity(MyCalculator.class);
                 break;
         }
     }

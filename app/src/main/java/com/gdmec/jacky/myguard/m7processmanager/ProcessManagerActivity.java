@@ -1,9 +1,9 @@
 package com.gdmec.jacky.myguard.m7processmanager;
 
+import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.format.Formatter;
 import android.view.View;
 import android.view.Window;
@@ -23,7 +23,7 @@ import com.gdmec.jacky.myguard.m7processmanager.utils.TaskInfoParser;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProcessManagerActivity extends AppCompatActivity implements View.OnClickListener {
+public class ProcessManagerActivity extends Activity implements View.OnClickListener {
 
     ProcessManagerAdapter adapter;
     private TextView mRunProcessNum;

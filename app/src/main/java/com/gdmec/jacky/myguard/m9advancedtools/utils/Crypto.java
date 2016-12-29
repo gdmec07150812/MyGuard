@@ -9,6 +9,9 @@ import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
+/**
+ * Created by dell-pc on 2016/12/19.
+ */
 public class Crypto {
 
     public static String encrypt(String seed, String plain) throws Exception {
@@ -45,7 +48,7 @@ public class Crypto {
     private static byte[] decrypt(byte[] raw, byte[] encrypted) throws Exception {
         SecretKeySpec keySpec = new SecretKeySpec(raw, "AES");
         Cipher cipher = Cipher.getInstance("AES");
-        cipher.init(Cipher.ENCRYPT_MODE, keySpec);
+        cipher.init(Cipher.DECRYPT_MODE, keySpec);
         byte[] decrypted = cipher.doFinal(encrypted);
         return decrypted;
     }

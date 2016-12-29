@@ -1,10 +1,10 @@
 package com.gdmec.jacky.myguard.m9advancedtools;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
@@ -19,7 +19,7 @@ import android.widget.Toast;
 import com.gdmec.jacky.myguard.R;
 import com.gdmec.jacky.myguard.m2theftguard.utils.MD5Utils;
 
-public class EnterPswActivity extends AppCompatActivity implements View.OnClickListener {
+public class EnterPswActivity extends Activity implements View.OnClickListener {
     private ImageView mAppIcon;
     private TextView mAppNameTV;
     private EditText mPswET;

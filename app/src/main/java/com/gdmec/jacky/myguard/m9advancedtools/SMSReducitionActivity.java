@@ -1,7 +1,7 @@
 package com.gdmec.jacky.myguard.m9advancedtools;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
@@ -16,7 +16,7 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
 
-public class SMSReducitionActivity extends AppCompatActivity implements View.OnClickListener {
+public class SMSReducitionActivity extends Activity implements View.OnClickListener {
     private MyCircleProgress mProgressButton;
     private boolean flag = false;
     private SmsReducitionUtils smsReducitionUtils;
@@ -71,7 +71,6 @@ public class SMSReducitionActivity extends AppCompatActivity implements View.OnC
                                 public void onSmsReducition(int process) {
                                     mProgressButton.setProcess(process);
                                 }
-
                                 @Override
                                 public void beforeSmsReducition(int size) {
                                     mProgressButton.setMax(size);

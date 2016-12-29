@@ -1,12 +1,12 @@
 package com.gdmec.jacky.myguard.m8trafficmonitor;
 
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.telephony.SmsManager;
 import android.telephony.SmsMessage;
 import android.text.TextUtils;
@@ -26,7 +26,7 @@ import com.gdmec.jacky.myguard.m8trafficmonitor.service.TrafficMonitoringService
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class TrafficMonitoringActivity extends AppCompatActivity implements View.OnClickListener {
+public class TrafficMonitoringActivity extends Activity implements View.OnClickListener {
     private SharedPreferences mSP;
     private Button mCorrentFlowBtn;
     private TextView mTotalTV;

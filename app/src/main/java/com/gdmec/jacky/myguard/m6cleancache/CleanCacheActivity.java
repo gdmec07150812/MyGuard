@@ -1,12 +1,12 @@
 package com.gdmec.jacky.myguard.m6cleancache;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.text.format.Formatter;
 import android.view.View;
 import android.view.Window;
@@ -20,7 +20,7 @@ import com.gdmec.jacky.myguard.R;
 import java.lang.reflect.Method;
 import java.util.Random;
 
-public class CleanCacheActivity extends AppCompatActivity implements View.OnClickListener {
+public class CleanCacheActivity extends Activity implements View.OnClickListener {
     protected static final int CLEANNING = 100;
     protected static final int CLEAN_FINISH = 10;
     private AnimationDrawable animation;

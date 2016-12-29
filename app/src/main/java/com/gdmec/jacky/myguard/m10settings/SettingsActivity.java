@@ -1,9 +1,9 @@
 package com.gdmec.jacky.myguard.m10settings;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
@@ -13,8 +13,9 @@ import android.widget.TextView;
 import com.gdmec.jacky.myguard.R;
 import com.gdmec.jacky.myguard.m10settings.utils.SystemInfoUtils;
 import com.gdmec.jacky.myguard.m10settings.widget.SettingView;
+import com.gdmec.jacky.myguard.m9advancedtools.service.AppLockService;
 
-public class SettingsActivity extends AppCompatActivity implements View.OnClickListener, SettingView.OnCheckedStatusIsChanged {
+public class SettingsActivity extends Activity implements View.OnClickListener, SettingView.OnCheckedStatusIsChanged {
     private SettingView mBlackNumSV;
     private SettingView mAppLockSV;
     private SharedPreferences mSP;
@@ -68,12 +69,12 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.sv_applock_set:
                 saveStatus("AppLockStatus", isChecked);
-                /*if(isChecked){
+                if (isChecked) {
                     intent=new Intent(this,AppLockService.class);
                     startService(intent);
                 }else{
                     stopService(intent);
-                }*/
+                }
                 break;
         }
     }
