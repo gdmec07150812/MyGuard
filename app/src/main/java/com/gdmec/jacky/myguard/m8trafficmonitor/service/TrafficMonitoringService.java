@@ -12,14 +12,17 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+
 public class TrafficMonitoringService extends Service {
+
     boolean flag = true;
     private long mOldRxBytes;
     private long mOldTxBytes;
     private TrafficDao dao;
-    private SharedPreferences mSp;
+    private SharedPreferences msp;
     private long usedFlow;
     private Thread mThread = new Thread() {
+        @Override
         public void run() {
             while (flag) {
                 try {
@@ -32,7 +35,7 @@ public class TrafficMonitoringService extends Service {
         }
 
         private void updateTodayGPRS() {
-            usedFlow = mSp.getLong("usedflow", 0);
+            usedFlow = msp.getLong("usedflow", 0);
             Date date = new Date();
             Calendar calendar = Calendar.getInstance();
             calendar.setTime(date);
@@ -41,27 +44,27 @@ public class TrafficMonitoringService extends Service {
             }
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
             String dataString = sdf.format(date);
-            long mobileGPRS = dao.getMoblesGPRS(dataString);
-            long mobileRxBytes = TrafficStats.getMobileRxBytes();
-            long mobileTxBytes = TrafficStats.getMobileTxBytes();
-            long newGprs = (mobileRxBytes + mobileTxBytes) - mOldRxBytes - mOldTxBytes;
-            mOldRxBytes = mobileRxBytes;
-            mOldTxBytes = mobileTxBytes;
+            long moblieGPRS = dao.getMoblieGPRS(dataString);
+            long moblieRxBytes = TrafficStats.getMobileRxBytes();
+            long moblieTxBytes = TrafficStats.getMobileTxBytes();
+            long newGprs = (moblieRxBytes + moblieTxBytes) - mOldRxBytes - mOldTxBytes;
+            mOldRxBytes = moblieRxBytes;
+            mOldTxBytes = moblieTxBytes;
             if (newGprs < 0) {
-                newGprs = mobileRxBytes + mobileTxBytes;
+                newGprs = moblieRxBytes + moblieTxBytes;
             }
-            if (mobileGPRS == -1) {
+            if (moblieGPRS == -1) {
                 dao.insertTodayGPRS(newGprs);
             } else {
-                if (mobileGPRS < 0) {
-                    mobileGPRS = 0;
+                if (moblieGPRS < 0) {
+                    moblieGPRS = 0;
                 }
-                dao.UpdateTodayGPRS(mobileGPRS + newGprs);
+                dao.UpdateTodayGPRS(moblieGPRS + newGprs);
             }
             usedFlow = usedFlow + newGprs;
-            SharedPreferences.Editor edit = mSp.edit();
-            edit.putLong("usedflow", usedFlow);
-            edit.commit();
+            SharedPreferences.Editor editor = msp.edit();
+            editor.putLong("userflow", usedFlow);
+            editor.commit();
         }
     };
 
@@ -76,21 +79,17 @@ public class TrafficMonitoringService extends Service {
         mOldRxBytes = TrafficStats.getMobileRxBytes();
         mOldTxBytes = TrafficStats.getMobileTxBytes();
         dao = new TrafficDao(this);
-        mSp = getSharedPreferences("config", MODE_PRIVATE);
+        msp = getSharedPreferences("config", MODE_PRIVATE);
         mThread.start();
     }
 
     @Override
     public void onDestroy() {
-        if (mThread != null & Thread.interrupted()) {
+        if (mThread != null & !Thread.interrupted()) {
             flag = false;
             mThread.interrupt();
             mThread = null;
         }
         super.onDestroy();
     }
-
 }
-
-
-

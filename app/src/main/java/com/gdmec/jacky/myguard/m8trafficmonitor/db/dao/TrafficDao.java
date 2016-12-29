@@ -12,6 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+
 public class TrafficDao {
     private TrafficOpenHelper helper;
 
@@ -19,12 +20,11 @@ public class TrafficDao {
         helper = new TrafficOpenHelper(context);
     }
 
-    public long getMoblesGPRS(String dataString) {
+    public long getMoblieGPRS(String dataString) {
         SQLiteDatabase db = helper.getReadableDatabase();
         long gprs = 0;
-        Cursor cursor = db.rawQuery("select gprs from traffic where date=?", new String[]{
-                " datetime(" + dataString + ")"
-        });
+        Cursor cursor = db.rawQuery("select gprs from traffic where date = ?",
+                new String[]{"datetime(" + dataString + ")"});
         if (cursor.moveToNext()) {
             String gprsStr = cursor.getString(0);
             if (!TextUtils.isEmpty(gprsStr))
@@ -33,6 +33,7 @@ public class TrafficDao {
             gprs = -1;
         }
         return gprs;
+
     }
 
     public void insertTodayGPRS(long gprs) {
@@ -46,6 +47,7 @@ public class TrafficDao {
         values.put("gprs", String.valueOf(gprs));
         values.put("date", "datetime(" + dataString + ")");
         db.insert("traffic", null, values);
+
     }
 
     public void UpdateTodayGPRS(long gprs) {
@@ -56,9 +58,7 @@ public class TrafficDao {
         ContentValues values = new ContentValues();
         values.put("gprs", String.valueOf(gprs));
         values.put("date", "datetime(" + dataString + ")");
-        db.update("traffic", values, "date=?", new String[]{
-                "datetime(" + dataString + ")"
-        });
+        db.update("traffic", values, "date=?", new String[]{"datetime(" + dataString + ")"});
 
     }
 }
